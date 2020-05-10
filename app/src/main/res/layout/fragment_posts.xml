@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Posts">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<com.facebook.shimmer.ShimmerFrameLayout-->
+    <!--android:id="@+id/shimmer_view_container"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:shimmer_auto_start="true"-->
+    <!--&gt;-->
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefreshPosts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerVeiw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--        </RelativeLayout>-->
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</FrameLayout>

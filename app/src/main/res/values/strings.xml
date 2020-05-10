@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">initernship</string>
+    <string name="tab_text_1">Posts</string>
+    <string name="tab_text_2">Messages</string>
+    <string name="tab_text_3">News</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
