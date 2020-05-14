@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "37864673531",
+    "firebase_url": "https://intership-27.firebaseio.com",
+    "project_id": "intership-27",
+    "storage_bucket": "intership-27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37864673531:android:086aa261a1171665ffe05e",
+        "android_client_info": {
+          "package_name": "ultimate.com.initernship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37864673531-p8s3q7ptuucngluqm30m75n4h8oqn553.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfjNy1qlC_JkqwWleLEe8axx-g392X4jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37864673531-p8s3q7ptuucngluqm30m75n4h8oqn553.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

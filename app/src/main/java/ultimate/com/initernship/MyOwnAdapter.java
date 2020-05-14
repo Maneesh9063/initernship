@@ -3,6 +3,7 @@ package ultimate.com.initernship;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,12 +12,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 public class MyOwnAdapter extends RecyclerView.Adapter<MyOwnAdapter.MHolder> {
 
     private final Context ct;
     private ArrayList<updatingClass> data;
+
 
     static class MHolder extends RecyclerView.ViewHolder {
         TextView titleR, contentR,authorR,timeR,typeR;
@@ -30,6 +34,7 @@ public class MyOwnAdapter extends RecyclerView.Adapter<MyOwnAdapter.MHolder> {
             authorR = (TextView)itemView.findViewById(R.id.author);
             timeR = (TextView)itemView.findViewById(R.id.time);
             imageR = (ImageView)itemView.findViewById(R.id.image);
+//            Log.d("adapter","came");
 
         }
     }
@@ -37,6 +42,7 @@ public class MyOwnAdapter extends RecyclerView.Adapter<MyOwnAdapter.MHolder> {
     public MyOwnAdapter(Context ct ,ArrayList<updatingClass> info){
         this.ct = ct;
         data = info;
+//        Log.d("adapter","constr");
     }
 
     @NonNull
@@ -51,13 +57,18 @@ public class MyOwnAdapter extends RecyclerView.Adapter<MyOwnAdapter.MHolder> {
     public void onBindViewHolder(@NonNull MHolder holder, int position) {
 
         updatingClass obj = data.get(position);
-        long time = obj.getTimeOfPost();
+//        Log.d("adapter",""+obj.getTitle());
+        String time = obj.getTimeOfPost();
         holder.titleR.setText(obj.getTitle());
         holder.typeR.setText(obj.getTopic());
         holder.authorR.setText(obj.getAuthor());
-        holder.timeR.setText(String.valueOf(time));
+        holder.timeR.setText(obj.getTimeOfPost());
         holder.contentR.setText(obj.getContent());
-        holder.imageR.setImageBitmap( decodeImage((int) obj.getImage()));
+//        holder.imageR.setImageDrawable(R.drawable.img);
+        holder.imageR.setImageResource((int)(R.drawable.img));
+//        Glide.with(ct).load(obj.getImage()).into(holder.imageR);
+
+//        holder.imageR.setImageBitmap( decodeImage((int) obj.getImage()));
 
     }
     @Override

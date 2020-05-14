@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framep"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/divider">
@@ -87,10 +88,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-
-                    android:layout_marginTop="2dp"
-                    android:inputType="datetime"
                     android:text="Time"
+                    android:layout_marginTop="2dp"
                     android:typeface="sans" />
 
             </LinearLayout>

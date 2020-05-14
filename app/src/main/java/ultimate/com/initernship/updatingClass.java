@@ -6,25 +6,35 @@ public class updatingClass {
     private String Author;
     private String Topic;
     private String content;
-    private long TimeOfPost;
-    private int image;
+    private String TimeOfPost;
+    private String image;
+    private String newsUrl;
 
-    public updatingClass(String Title, String Author, String Topic, long TimeOfPost,String content,int image) {
+    public updatingClass(String Title, String Author, String Topic, String TimeOfPost,String content,String image , String newsUrl) {
         this.Title = Title;
         this.Author = Author;
         this.Topic = Topic;
         this.TimeOfPost = TimeOfPost;
         this.content = content;
         this.image = image;
+        this.newsUrl = newsUrl;
 
     }
     public updatingClass(){}
 
-    public long getImage() {
+    public String getNewsUrl() {
+        return newsUrl;
+    }
+
+    public void setNewsUrl(String newsUrl) {
+        this.newsUrl = newsUrl;
+    }
+
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 
@@ -60,11 +70,11 @@ public class updatingClass {
         Topic = topic;
     }
 
-    public long getTimeOfPost() {
+    public String getTimeOfPost() {
         return TimeOfPost;
     }
 
-    public void setTimeOfPost(long timeOfPost) {
+    public void setTimeOfPost(String timeOfPost) {
         TimeOfPost = timeOfPost;
     }
 
